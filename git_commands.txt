@@ -41,7 +41,7 @@ git commit -m "fixed bug"
 
 
 #---- how to clone from one repo to another--------
-
+option1: with the need to delete .git
 step 1
 git clone https://github.com/LinkedInLearning/python-ET-4314028	Clone the source repo locally. (You should be in the folder)
 
@@ -59,3 +59,32 @@ git checkout -b python_linkedin_learning
 
 step5: Push the changes to your branch on repo
 git push -u origin python_linkedin_learning	
+
+
+
+#-- option2 : delete .git amd clone a repo to your repo
+
+Step1: Go to the folder where your copied code exists
+cd /path/to/your/folder
+
+Step2: If your copied folder already contains a hidden .git folder from the old repo, remove it first:--this is hidden folder
+rm -rf .git
+
+Step3: Initialize a new git repository
+git init
+
+Step4: Ad the file you want to git to track
+git add .
+
+Step5: save the changes
+git commit -m "message"
+
+Step6: Add your repository - this is the repo you will work on..
+git remote add origin https://github.com/rajonkar/MyLearning.git
+
+Step6: create and switch your branch
+git checkout -b my-new-branch
+
+Step7: push the changes
+git push -u origin my-new-branch
+
