@@ -17,6 +17,9 @@ git branch -M main
 6-#First push uses -u to link your branch
 git push -u origin main
 
+# see if any untracked file
+# git status
+
 #-------------------------------#
 
 #git add . → stages all files
