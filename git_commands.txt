@@ -30,3 +30,11 @@ git push -u origin main
 
 
 git remote add origin https://github.com/username/repo.git
+
+# Question: Every time i make  changes to exsitng file i need to excute git add
+Answer below
+
+You might change 5 files but want to commit only 2
+
+git add file1.py file2.py
+git commit -m "fixed bug"
