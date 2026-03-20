@@ -41,7 +41,7 @@ git commit -m "fixed bug"
 
 
 #---- how to clone from one repo to another--------
-option1: with the need to delete .git
+option1: without the need to delete .git
 step 1
 git clone https://github.com/LinkedInLearning/python-ET-4314028	Clone the source repo locally. (You should be in the folder)
 
