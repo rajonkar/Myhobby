@@ -38,3 +38,24 @@ You might change 5 files but want to commit only 2
 
 git add file1.py file2.py
 git commit -m "fixed bug"
+
+
+#---- how to clone from one repo to another--------
+
+step 1
+git clone https://github.com/LinkedInLearning/python-ET-4314028	Clone the source repo locally. (You should be in the folder)
+
+(you make sure that you see git folder using ls-a) 
+If not git command wont work
+
+step 2: #Rename the existing remote to upstream
+git remote rename origin upstream	
+
+step 3: Asdd your repo
+git remote add origin https://github.com/rajonkar/MyLearning.git	
+
+step4: Create your branch..here the metatdata in the git is updated
+git checkout -b python_linkedin_learning
+
+step5: Push the changes to your branch on repo
+git push -u origin python_linkedin_learning	
